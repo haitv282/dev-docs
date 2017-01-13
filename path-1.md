@@ -16,7 +16,7 @@ Các Class xử lý cấu trúc dữ liệu và các action, đồng thời sử
 
 ##### Cấu trúc Class
 
-Cú pháp để tạo ra một class khá đơn giản: để khai báo một class ta sử dụng từ khóa class, theo sau từ khóa là tên của class và một cặp ngoặc nhọn \({ }\):
+Cú pháp để tạo ra một class khá đơn giản: để khai báo một class ta sử dụng từ khóa class, theo sau từ khóa là tên của class và một cặp ngoặc nhọn \(`{ }`\):
 
 ```php
 <?php 
@@ -34,7 +34,7 @@ $obj = new MyClass;
 ?>
 ```
 
-Để xem nội dung của class, bạn sử dụng hàm var\_dump\(\):
+Để xem nội dung của class, bạn sử dụng hàm `var_dump()`:
 
 ```php
 <?php
@@ -42,7 +42,7 @@ var_dump($obj);
 ?>
 ```
 
-Hãy thử lại quá trình này bằng cách đặt toàn bộ các mã lệnh phía trên vào tập tin có tên là test.php và đặt nó vào trong locahost của bạn:
+Hãy thử lại quá trình này bằng cách đặt toàn bộ các mã lệnh phía trên vào tập tin có tên là **test.php** và đặt nó vào trong locahost của bạn:
 
 ```php
 <?php 
@@ -117,7 +117,7 @@ I'm a class property!
 
 Phương thức là các hàm riêng biệt của class. Các action riêng lẻ, mà một object sẽ thực thi, thì được định nghĩa bên trong class như là các phương thức.
 
-Ví dụ, để tạo ra các phương thức có khả năng thiết lập và trả về giá trị của thuộc tính \`$prop1\`, ta thêm đoạn mã như sau:
+Ví dụ, để tạo ra các phương thức có khả năng thiết lập và trả về giá trị của thuộc tính `$prop1`, ta thêm đoạn mã như sau:
 
 ```php
 <?php 
@@ -141,9 +141,9 @@ echo $obj->prop1;
 ?>
 ```
 
-**Chú ý:** Hướng Đối Tượng cho phép các object tự tham chiếu chính nó \(tham chiếu bên trong class\) bằng cách sử dụng biến $this. Khi làm việc bên trong 1 phương thức, sử dụng $this cũng giống như cách bạn sử dụng object name bên ngoài class.
+**Chú ý:** Hướng Đối Tượng cho phép các object tự tham chiếu chính nó \(tham chiếu bên trong class\) bằng cách sử dụng biến `$this`. Khi làm việc bên trong 1 phương thức, sử dụng `$this` cũng giống như cách bạn sử dụng object name bên ngoài class.
 
-Để sử dụng các phương thức này, việc gọi chúng cũng tương tự như sử dụng các hàm thông thường, nhưng chúng ta phải thông qua object để tham chiếu đến chúng. Echo thuộc tính từMyClass, thay đổi giá trị của nó, và echo nó một lần nữa để xem sự thay đổi:
+Để sử dụng các phương thức này, việc gọi chúng cũng tương tự như sử dụng các hàm thông thường, nhưng chúng ta phải thông qua object để tham chiếu đến chúng. Echo thuộc tính từ MyClass, thay đổi giá trị của nó, và echo nó một lần nữa để xem sự thay đổi:
 
 ```php
 <?php 
@@ -225,9 +225,11 @@ I'm a new property value!
 I belong to the second instance!
 ```
 
-Như bạn có thể thấy ,Hướng Đối Tượng giữ các object như các thực thể riêng biệt, nhờ đó làm cho việc tách mã lệnh thành các phần nhỏ khác nhau mà vẫn giữ được mối liên hệ nhất định giữa chúng một cách dễ dàng.
+Như bạn có thể thấy, Hướng Đối Tượng giữ các object như các thực thể riêng biệt, nhờ đó làm cho việc tách mã lệnh thành các phần nhỏ khác nhau mà vẫn giữ được mối liên hệ nhất định giữa chúng một cách dễ dàng.
 
 ##### Reference
 
-[http://www.qhonline.info/php-nang-cao/57/lap-trinh-huong-doi-tuong-co-ban-ve-nhung-khai-niem.html](http://www.qhonline.info/php-nang-cao/57/lap-trinh-huong-doi-tuong-co-ban-ve-nhung-khai-niem.html)
+* [http://www.qhonline.info/php-nang-cao/57/lap-trinh-huong-doi-tuong-co-ban-ve-nhung-khai-niem.html](http://www.qhonline.info/php-nang-cao/57/lap-trinh-huong-doi-tuong-co-ban-ve-nhung-khai-niem.html)
+
+
 
