@@ -8,6 +8,8 @@
 
 Một lợi ích to lớn của nguyên lý lập trình DRY là: nếu một phần thông tin nào đó được thay đổi trong chương trình của bạn, thì thông thường chỉ cần có duy nhất 1 thay đổi để cập nhật lại mã lệnh. Một trong những ác mộng lớn nhất đối với các lập trình viên là bảo trì mã lệnh, nơi dữ liệu được khai báo đi khai báo lại nhiều lần, họ phải tìm kiếm, làm việc trên các dữ liệu và chức năng trùng lặp.
 
+Có thể hiểu cách lập trình OOP là bạn phải xây dựng được một loại khuôn mẫu cho sản phẩm của bạn. Sau đó việc cần làm của bạn là đổ nguyên liệu vào khuôn và đúc thành sản phẩm. OOP chính là cái khuôn đó.
+
 Thật ra Lập Trình Hướng Đối Tượng trở nên đáng sợ đối với rất nhiều lập trình viên bởi nó mang đến các cú pháp khá mới mẻ và cầu kỳ , do vậy nó nhanh chóng trở nên phức tạp hơn rất nhiều so với lập trình hướng thủ tục. Tuy nhiên, nếu các bạn nhìn nhận vấn đề 1 cách kỹ lưỡng hơn, Lập Trình Hướng Đối Tượng thực ra lại là 1 phương pháp rất đơn giản, giúp cho việc lập trình đơn giản hóa đi rất nhiều.
 
 Tài liệu được tham khảo từ một số nguồn sau:

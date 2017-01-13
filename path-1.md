@@ -54,7 +54,7 @@ var_dump($obj);
 ?>
 ```
 
-Mở trình duyệt của bạn và chạy http://localhost/test.php , bạn sẽ nhìn thấy như sau:
+Mở trình duyệt của bạn và chạy [http://localhost/test.php](http://localhost/test.php) , bạn sẽ nhìn thấy như sau:
 
 ```
 object(MyClass)#1 (0) { }
@@ -74,7 +74,7 @@ class MyClass
 { 
     public $prop1 = "I'm a class property!"; 
 } 
- 
+
 $obj = new MyClass; 
 var_dump($obj); 
 ?>
@@ -84,7 +84,7 @@ Từ khóa public xác định tầm vực của thuộc tính. Tiếp đó, tê
 
 Để đọc thuộc tính này và xuất chúng ra trình duyệt, chúng ta sẽ phải tham chiếu chúng thông qua các object:
 
-```
+```php
 <?php
 echo $obj->prop1;  
 ?>
@@ -94,15 +94,15 @@ Nếu chúng ta không khai báo object, chương trình sẽ không thể xác 
 
 Sửa lại mã lệnh file test.php như sau:
 
-```
+```php
 <?php 
 class MyClass 
 { 
     public $prop1 = "I'm a class property!"; 
 } 
- 
+
 $obj = new MyClass; 
- 
+
 echo $obj->prop1; // Xuất thuộc tính ra trình duyệt 
 ?>
 ```
@@ -119,23 +119,23 @@ Phương thức là các hàm riêng biệt của class. Các action riêng lẻ
 
 Ví dụ, để tạo ra các phương thức có khả năng thiết lập và trả về giá trị của thuộc tính \`$prop1\`, ta thêm đoạn mã như sau:
 
-```
+```php
 <?php 
 class MyClass 
 { 
     public $prop1 = "I'm a class property!"; 
- 
+
     public function setProperty($newval) 
     { 
         $this->prop1 = $newval; 
     } 
- 
+
     public function getProperty() 
     { 
         return $this->prop1 . "<br />"; 
     } 
 } 
- 
+
 $obj = new MyClass; 
 echo $obj->prop1; 
 ?>
@@ -145,29 +145,29 @@ echo $obj->prop1;
 
 Để sử dụng các phương thức này, việc gọi chúng cũng tương tự như sử dụng các hàm thông thường, nhưng chúng ta phải thông qua object để tham chiếu đến chúng. Echo thuộc tính từMyClass, thay đổi giá trị của nó, và echo nó một lần nữa để xem sự thay đổi:
 
-```
+```php
 <?php 
 class MyClass 
 { 
     public $prop1 = "I'm a class property!"; 
- 
+
     public function setProperty($newval) 
     { 
         $this->prop1 = $newval; 
     } 
- 
+
     public function getProperty() 
     { 
         return $this->prop1 . "<br />"; 
     } 
 } 
- 
+
 $obj = new MyClass; 
- 
+
 echo $obj->getProperty(); // echo giá trị của thuộc tính 
- 
+
 $obj->setProperty("I'm a new property value!"); // Thiết lập giá trị mới 
- 
+
 echo $obj->getProperty(); // echo nó lại 1 lần nữa để xem sự thay đổi 
 ?>
 ```
@@ -181,35 +181,35 @@ I'm a new property value!
 
 _**“Sức mạnh của Hướng Đối Tượng càng bộc lộ rõ khi chúng ta sử dụng cùng một class cho nhiều trượng hợp”**_
 
-```
+```php
 <?php 
 class MyClass 
 { 
     public $prop1 = "I'm a class property!"; 
- 
+
     public function setProperty($newval) 
     { 
         $this->prop1 = $newval; 
     } 
- 
+
     public function getProperty() 
     { 
         return $this->prop1 . "<br />"; 
     } 
 } 
- 
+
 // Tạo hai objects 
 $obj = new MyClass; 
 $obj2 = new MyClass; 
- 
+
 // Echo giá trị của $prop1 từ hai object 
 echo $obj->getProperty(); 
 echo $obj2->getProperty(); 
- 
+
 // Thiết lập giá trị mới cho thuộc tính $prop1 của từng object 
 $obj->setProperty("I'm a new property value!"); 
 $obj2->setProperty("I belong to the second instance!"); 
- 
+
 // Echo lại giá trị của $prop1 từ hai object để xem sự thay đổi 
 echo $obj->getProperty(); 
 echo $obj2->getProperty(); 
@@ -227,11 +227,7 @@ I belong to the second instance!
 
 Như bạn có thể thấy ,Hướng Đối Tượng giữ các object như các thực thể riêng biệt, nhờ đó làm cho việc tách mã lệnh thành các phần nhỏ khác nhau mà vẫn giữ được mối liên hệ nhất định giữa chúng một cách dễ dàng.
 
-
-
 ##### Reference
 
-http://www.qhonline.info/php-nang-cao/57/lap-trinh-huong-doi-tuong-co-ban-ve-nhung-khai-niem.html
-
-
+[http://www.qhonline.info/php-nang-cao/57/lap-trinh-huong-doi-tuong-co-ban-ve-nhung-khai-niem.html](http://www.qhonline.info/php-nang-cao/57/lap-trinh-huong-doi-tuong-co-ban-ve-nhung-khai-niem.html)
 
