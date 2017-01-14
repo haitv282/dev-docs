@@ -9,5 +9,18 @@
         * [The basic properties](inheritance.md)
     * [MVC Model](mvc-model.md)
 * [Magento Basic](magento-basic.md)
+    * Cài đặt
+    * Cấu trúc thư mục
+    * Request flow
+    * [MVC trong Magento](mvc-trong-magento.md)
+        * Controller
+        * Model
+        * View
+    * Các thành phần quan trọng khác
+        * Configuration
+        * Setup SQL
+        * Events
+        * JS \(ko, require\)
+    * Debugging
 * [Magento Advance](magento-advance.md)
 
