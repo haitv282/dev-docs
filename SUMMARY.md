@@ -6,7 +6,7 @@
         * [Object & Class](path-1.md)
         * [Method & Variable](example.md)
         * [Magic Method](path-2.md)
-        * [Inheritance](inheritance.md)
+        * [The basic properties](inheritance.md)
         * Abstract class & Interface
     * [MVC Model](mvc-model.md)
 * [Magento Basic](magento-basic.md)
