@@ -22,3 +22,5 @@ Layouts
 
 
 
+Tài liệu học trên: https://www.mageplaza.com/magento-2-module-development/ 
+
