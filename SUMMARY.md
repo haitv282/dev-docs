@@ -14,7 +14,7 @@
   * [Request flow](request-flow.md)
   * [MVC trong Magento](mvc-trong-magento.md)
     * [Controller](mvc-trong-magento/controller.md)
-    * Model
+    * [Model](mvc-trong-magento/model.md)
     * View
   * Các thành phần quan trọng khác
     * Configuration
