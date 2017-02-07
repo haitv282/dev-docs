@@ -16,8 +16,8 @@
     * [Controller](mvc-trong-magento/controller.md)
     * [Model](mvc-trong-magento/model.md)
     * [View](mvc-trong-magento/view.md)
-  * Các thành phần quan trọng khác
-    * Configuration
+  * [Các thành phần quan trọng khác](cac-thanh-phn-quan-trng-khac.md)
+    * [Configuration](cac-thanh-phn-quan-trng-khac/configuration.md)
     * Setup SQL
     * Events
     * JS \(ko, require\)
