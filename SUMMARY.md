@@ -19,7 +19,7 @@
   * [Các thành phần quan trọng khác](cac-thanh-phn-quan-trng-khac.md)
     * [Configuration](cac-thanh-phn-quan-trng-khac/configuration.md)
     * [Setup SQL](cac-thanh-phn-quan-trng-khac/setup-sql.md)
-    * Events
+    * [Events](cac-thanh-phn-quan-trng-khac/events.md)
     * JS \(ko, require\)
   * Debugging
 * [Magento Advance](magento-advance.md)
