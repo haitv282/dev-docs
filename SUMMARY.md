@@ -18,7 +18,7 @@
     * [View](mvc-trong-magento/view.md)
   * [Các thành phần quan trọng khác](cac-thanh-phn-quan-trng-khac.md)
     * [Configuration](cac-thanh-phn-quan-trng-khac/configuration.md)
-    * Setup SQL
+    * [Setup SQL](cac-thanh-phn-quan-trng-khac/setup-sql.md)
     * Events
     * JS \(ko, require\)
   * Debugging
