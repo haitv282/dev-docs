@@ -15,7 +15,7 @@
   * [MVC trong Magento](mvc-trong-magento.md)
     * [Controller](mvc-trong-magento/controller.md)
     * [Model](mvc-trong-magento/model.md)
-    * View
+    * [View](mvc-trong-magento/view.md)
   * Các thành phần quan trọng khác
     * Configuration
     * Setup SQL
