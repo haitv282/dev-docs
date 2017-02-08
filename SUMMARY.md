@@ -21,8 +21,8 @@
     * [Setup SQL](cac-thanh-phn-quan-trng-khac/setup-sql.md)
     * [Events](cac-thanh-phn-quan-trng-khac/events.md)
     * JS \(ko, require\)
-  * Debugging
+  * [Debugging](debugging.md)
 * [Magento Advance](magento-advance.md)
-  * Di
+  * [Di](magento-advance/di.md)
   * API
 
