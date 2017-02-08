@@ -24,5 +24,5 @@
   * [Debugging](debugging.md)
 * [Magento Advance](magento-advance.md)
   * [Di](magento-advance/di.md)
-  * API
+  * [API](magento-advance/api.md)
 
