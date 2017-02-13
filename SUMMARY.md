@@ -8,6 +8,7 @@
     * [Magic Method](path-2.md)
     * [The basic properties](inheritance.md)
   * [MVC Model](mvc-model.md)
+  * [Debug](debug.md)
 * [Magento Basic](magento-basic.md)
   * [Cài đặt](cai-t.md)
   * [Cấu trúc thư mục](cu-truc-th-mc.md)
