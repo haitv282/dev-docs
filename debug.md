@@ -1,176 +1,113 @@
+## Why this topic?
 
+* Debugging is a daily task and can be very irritating and time-consuming if not done effectively.
 
+* Not only help in fixing bugs but also help understanding existed code/framework
 
+### Without debugger
 
-Debugging: Why this topic? 
+* Print \(or the likes that output text to screen\)
 
-- Debugging is a daily task and can be very irritating and time-consuming if not done effectively. 
+### With debugger
 
-- Not only help in fixing bugs but also help understanding existed code/framework
+* Breakpoints
+* Call Stack
 
+* Watch/Inspect
 
+* Controlling Execution:
 
-Basic term – w.o. debugger 
+* > Step Over \(Next line\)
+  >
+  > Step Into
+  >
+  > Step Out
+  >
+  > Continue/Resume
 
-- Print \(or the likes that output text to screen\)
 
 
+## Debugging Javascript
 
-Basic terms – w. debugger 
+### Without debugger
 
-• Breakpoints 
+* alert \(\)
 
-• Call Stack 
+* console.log \(in fact, need a debugger for this command\)
 
-• Watch/Inspect 
+### With debugger
 
-• Controlling Execution: 
+Firefox: Firebug 
 
-  – Step Over \(Next line\) 
+Chrome: Built-in development tool \(F12 / Ctrl + Shift + I\)
 
-  – Step Into 
+IE / Edge: Built-in development tool \(F12\)
 
-  – Step Out 
 
-  – Continue/Resume
 
+## Debugging PHP
 
+### Without debugger
 
+* echo, die, var\_dump, print\_r
 
+* Magento 1: Mage::log\(\)
+* Magento 2: 
 
 
 
-  Debugging JavaScript 
+### With debugger:
 
-  • Without debugger: 
+#### Configure XDebug:
 
-    – alert 
+**php.ini \[XDebug\]**
 
-    – console.log \(in fact, need a debugger for this command\)
+```
+[XDebug]
+# Uncheck in php.ini
+zend_extension_ts="D:\xampp\php\ext\php_xdebug.dll"
+# Paste following lines:
+xdebug.remote_enable=On
+xdebug.remote_host="localhost"
+xdebug.remote_port=9000
+xdebug.remote_handler=dbgp
+xdebug.profiler_enable=1
+xdebug.profiler_output_dir="D:\xampp\tmp
+```
 
+**Check with command line:**
 
-
-  • With debugger: 
-
-    – Firefox: Firebug 
-
-    – Chrome: Built-in development tool 
-
-    – IE \(8,9\): Built-in development tool 
-
-
-
-  Shortcut: F12
-
-
-
-
-
- Debugging PHP 
-
-  • Without debugger: 
-
-  – echo, die, var\_dump, print\_r 
-
-  – Mage::log\(\)
-
-
-
-
-
-  Debugging PHP 
-
-  • With debugger: 
-
-  – Configure XDebug: 
-
-  • php.ini \[XDebug\] 
-
-
-
-\`\`\`
-
-\[XDebug\]
-
-
-
-\# Uncheck in php.ini
-
-
-
-zend\_extension\_ts="D:\xampp\php\ext\php\_xdebug.dll"
-
-\# Paste following lines:
-
-xdebug.remote\_enable=On
-
-xdebug.remote\_host="localhost"
-
-xdebug.remote\_port=9000
-
-xdebug.remote\_handler=dbgp
-
-xdebug.profiler\_enable=1
-
-xdebug.profiler\_output\_dir="D:\xampp\tmp
-
-\`\`\`
-
-
-
-Check with command line: 
-
-\`php -m \`
-
-
+`php -m `
 
 Output
 
-\`\`\` 
-
-\[Zend Modules\] 
-
+```
+[Zend Modules]
 Xdebug Zend Extension Manager
-
-\`\`\`
-
-
-
-\#\# Configure xDebug in PHPStorm
+```
 
 
 
+### Configure xDebug in PHPStorm
 
+#### Debugging SQL
 
-\#\# Debugging SQL 
+**Log specific SQL:**
 
+* M1: Use Mage::log\(“SQL=” . $collection-&gt;getSelect\(\)-&gt;\_\_toString\(\)\);
 
+**Log all SQL:**
 
-\#\#\# Log specific SQL: 
-
-– Use Mage::log\(“SQL=” . $collection-&gt;getSelect\(\)-&gt;\_\_toString\(\)\);
-
-
-
-\#\#\# Log all SQL: 
-
-
-
-– Edit file: lib/Varien/Db/Adapter/Pdo/Mysql.php
+* M1: Edit file: lib/Varien/Db/Adapter/Pdo/Mysql.php
 
 
 
-\`\`\`
+```
+protected $_debug = true;
+protected $_logAllQueries = true;
+```
 
-protected $\_debug = true;
+All queries will be written into:
 
-protected $\_logAllQueries = true;
-
-\`\`\`
-
-
-
-All queries will be written into: 
-
-\`var/debug/pdo\_mysql.log\`
+`var/debug/pdo_mysql.log`
 
